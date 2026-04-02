@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ONION GATE | Access Guide</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="particle-canvas"></canvas>
+  <div id="progress"></div>
+
+  <header class="navbar">
+    <a href="#hero">INIT</a>
+    <a href="#guide">GUIDE</a>
+    <a href="#security">SECURITY</a>
+    <a href="#features">FEATURES</a>
+    <a href="#chat">CHAT</a>
+    <a href="#payment">PAYMENT</a>
+    <a href="#access">ACCESS</a>
+    <a href="#rules">RULES</a>
+    <a href="#preview">PREVIEW</a>
+    <a href="#onion">ONION</a>
+  </header>
+
+  <main class="container">
+    <section id="hero" class="hero reveal revealed">
+      <h1>Access the Private Marketplace</h1>
+      <p>Secure. Anonymous. Exclusive.</p>
+      <a class="btn btn-primary" href="#guide">START GUIDE</a>
+      <div class="terminal">encrypted layer | .onion only</div>
+      <div class="trust-row">
+        <span class="chip">No direct IP exposure</span>
+        <span class="chip">Crypto-only flow</span>
+        <span class="chip">Admin-verified trades</span>
+      </div>
+    </section>
+
+    <section id="guide" class="panel reveal">
+      <h2>Interactive Access Guide</h2>
+      <div class="grid-2">
+        <div>
+          <h3>PC / Laptop</h3>
+          <div class="step-card active">
+            <button class="step-head">1. Download Tor Browser <span>−</span></button>
+            <div class="step-body">Visit torproject.org and download the correct version for your OS.</div>
+          </div>
+          <div class="step-card">
+            <button class="step-head">2. Install & Launch <span>+</span></button>
+            <div class="step-body">Run installer, open Tor Browser, and wait for network connection.</div>
+          </div>
+          <div class="step-card">
+            <button class="step-head">3. Open .onion link <span>+</span></button>
+            <div class="step-body">Paste the official .onion address into Tor Browser URL bar.</div>
+          </div>
+        </div>
+        <div>
+          <h3>Smartphone</h3>
+          <div class="step-card active">
+            <button class="step-head">Android → Tor Browser <span>−</span></button>
+            <div class="step-body">Install Tor Browser from Play Store and connect before browsing.</div>
+          </div>
+          <div class="step-card">
+            <button class="step-head">iPhone → Onion Browser <span>+</span></button>
+            <div class="step-body">Install Onion Browser from App Store and open .onion links only there.</div>
+          </div>
+        </div>
+      </div>
+      <div class="video-grid">
+        <article class="video-card">
+          <iframe src="https://www.youtube.com/embed/5EZJq1BeZ6w" title="Tor on PC" loading="lazy" allowfullscreen></iframe>
+          <a href="https://youtu.be/5EZJq1BeZ6w?si=nwA_I5VeiEk_hx8m" target="_blank" rel="noreferrer">Open PC Tutorial</a>
+        </article>
+        <article class="video-card">
+          <iframe src="https://www.youtube.com/embed/A3yifwDUvRo" title="Tor on mobile" loading="lazy" allowfullscreen></iframe>
+          <a href="https://youtu.be/A3yifwDUvRo?si=n_z7d50VQiOwmnIL" target="_blank" rel="noreferrer">Open Mobile Tutorial</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="security" class="panel reveal">
+      <h2>Security & Anonymity</h2>
+      <div class="grid-3">
+        <div class="card">What is .onion? A domain reachable only through Tor.</div>
+        <div class="card">Anonymous routing across encrypted relays.</div>
+        <div class="card">No direct IP exposure and minimal tracking surface.</div>
+      </div>
+    </section>
+
+    <section id="features" class="panel reveal">
+      <h2>Marketplace Features</h2>
+      <div class="grid-3">
+        <div class="card">Buy Arduino parts (low cost)</div>
+        <div class="card">Sell academic projects</div>
+        <div class="card">Hire developers/builders</div>
+        <div class="card">Private chat system</div>
+        <div class="card">Crypto payments</div>
+        <div class="card">Hand-to-hand option</div>
+      </div>
+    </section>
+
+    <section id="chat" class="panel reveal">
+      <h2>Chat + Admin System</h2>
+      <p class="warn">No transaction without admin verification.</p>
+      <div class="chat-box">
+        <div id="chatMessages" class="msgs">
+          <div class="msg">System: Welcome. Always involve admin before any deal.</div>
+          <div class="msg">User_X: Looking for Arduino sensors.</div>
+        </div>
+        <div class="actions">
+          <button id="addAdminBtn" class="btn">Add Admin</button>
+          <button id="verifyBtn" class="btn" disabled>Request Verification</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="payment" class="panel reveal">
+      <h2>Payment System</h2>
+      <div class="grid-2">
+        <div class="card">Crypto-only payments with wallet setup guidance.</div>
+        <div class="card">No direct meeting. Admin coordinates public drop points.</div>
+      </div>
+      <article class="video-card single">
+        <iframe src="https://www.youtube.com/embed/byNNauAJrKI" title="Wallet setup" loading="lazy" allowfullscreen></iframe>
+        <a href="https://youtu.be/byNNauAJrKI?si=94gf6VE34Y_3mLBo" target="_blank" rel="noreferrer">Open Wallet Tutorial</a>
+      </article>
+    </section>
+
+    <section id="access" class="panel reveal">
+      <h2>Access Control</h2>
+      <div class="card">
+        <p>Send verification request to: <strong id="rotatingEmail">vault.access@pm.me</strong></p>
+        <button id="rotateEmailBtn" class="btn">Rotate email</button>
+        <p class="small">Use university email (example: @esprit.tn). Verification is mandatory.</p>
+      </div>
+    </section>
+
+    <section id="rules" class="panel reveal">
+      <h2>Community Guidelines</h2>
+      <div class="grid-3">
+        <div class="card">No account sharing (instant ban)</div>
+        <div class="card">No spam</div>
+        <div class="card">No harassment or abuse</div>
+        <div class="card">No transaction without admin</div>
+        <div class="card">Respect anonymity</div>
+        <div class="card">No external deals</div>
+      </div>
+    </section>
+
+    <section id="onion" class="panel reveal">
+      <h2>Direct Onion Link</h2>
+      <div class="onion-box">
+        <code id="onionText">youtube.onion</code>
+        <button id="copyBtn" class="btn">COPY ADDRESS</button>
+        <p class="danger">Only open using Tor Browser.</p>
+      </div>
+    </section>
+
+    <section id="preview" class="panel reveal">
+      <h2>Application Preview</h2>
+      <div class="gallery">
+        <img class="preview-img" src="assets/login.png" alt="Login preview" />
+        <img class="preview-img" src="assets/marketplace.png" alt="Marketplace preview" />
+        <img class="preview-img" src="assets/msg.png" alt="Messaging preview" />
+        <img class="preview-img" src="assets/paymnt.png" alt="Payment preview" />
+        <img class="preview-img" src="assets/uploadproduct.png" alt="Upload preview" />
+      </div>
+    </section>
+  </main>
+
+  <button id="toTopBtn" class="to-top" aria-label="Back to top">↑</button>
+
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button id="lightboxClose" class="lightbox-close" aria-label="Close image">×</button>
+    <img id="lightboxImage" alt="Preview zoom" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
