@@ -23,6 +23,11 @@ h2{font-size:clamp(1.35rem,4vw,2rem);margin-bottom:18px;border-left:4px solid #1
 .small{margin-top:8px;font-size:.85rem;color:#c8d2e2}.gallery img{width:100%;border-radius:14px;border:1px solid #2c3142;display:block;cursor:zoom-in;transition:transform .25s ease,border-color .25s ease}.gallery img:hover{transform:translateY(-2px) scale(1.01);border-color:#1effbc}
 .onion-box{background:#03060c;padding:18px;border-radius:18px;border:1px dashed #1effbc;text-align:center;font-family:monospace}.onion-box code{display:block;font-size:1.05rem;color:#1effbc;word-break:break-all}
 .danger{margin-top:10px;color:#ff928b;font-size:.9rem}
+.dev-note{margin-bottom:8px;color:#ffd58b;font-weight:700}
+.account-list{margin-top:10px;display:grid;gap:8px}
+.account-item{display:flex;justify-content:space-between;gap:10px;align-items:center;background:#0b1622;border:1px solid #2b3947;border-radius:12px;padding:10px 12px;font-family:monospace}
+.account-item strong{color:#eafff8}
+.account-item span{color:#1effbc}
 .reveal{opacity:0;transform:translateY(16px);transition:all .45s ease}.revealed{opacity:1;transform:none}
 .to-top{position:fixed;right:14px;bottom:14px;z-index:55;border:1px solid #1effbc;background:#081210;color:#1effbc;border-radius:999px;width:42px;height:42px;cursor:pointer;display:none}
 .to-top.show{display:block}
