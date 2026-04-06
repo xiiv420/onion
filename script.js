@@ -144,3 +144,20 @@ document.addEventListener('keydown', (e) => {
 document.getElementById('toTopBtn').addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
+
+document.querySelectorAll('.mini-copy').forEach((btn) => {
+  btn.addEventListener('click', async () => {
+    const value = btn.getAttribute('data-copy') || '';
+    if (!value) return;
+    const prev = btn.textContent;
+    try {
+      await navigator.clipboard.writeText(value);
+      btn.textContent = 'Copied';
+    } catch {
+      btn.textContent = 'Failed';
+    }
+    setTimeout(() => {
+      btn.textContent = prev;
+    }, 1200);
+  });
+});
