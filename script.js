@@ -83,20 +83,6 @@ document.getElementById('verifyBtn').addEventListener('click', () => {
   pushMsg('Admin: Verification complete.');
 });
 
-const emails = [
-  'vault.access@pm.me',
-  'onion.entry@proton.me',
-  'gate.verify@cybermail.net',
-  'esprit.verify@onionbox.tn',
-  'rotating.key@tormail.org'
-];
-let e = 0;
-const emailEl = document.getElementById('rotatingEmail');
-document.getElementById('rotateEmailBtn').addEventListener('click', () => {
-  e = (e + 1) % emails.length;
-  emailEl.textContent = emails[e];
-});
-
 document.getElementById('copyBtn').addEventListener('click', async () => {
   const text = document.getElementById('onionText').textContent;
   const b = document.getElementById('copyBtn');
