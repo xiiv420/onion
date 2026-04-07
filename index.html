@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -27,185 +28,227 @@
   <main class="container">
     <section id="hero" class="hero reveal revealed">
       <h1>Access the Private Marketplace</h1>
-      <p>Secure. Anonymous. Exclusive.</p>
+      <p>Secure. Anonymous. Exclusive. (kol chay bel khfa w mriguel 😎)</p>
       <a class="btn btn-primary" href="#guide">START GUIDE</a>
       <div class="terminal">encrypted layer | .onion only</div>
       <div class="trust-row">
-        <span class="chip">No direct IP exposure</span>
-        <span class="chip">Crypto-only flow</span>
-        <span class="chip">Admin-verified trades</span>
+        <span class="chip">IP mte3ek ma ybanich</span>
+        <span class="chip">Transactions ken b crypto</span>
+        <span class="chip">Admin dima yconfirmi deals</span>
       </div>
     </section>
 
-    <section id="guide" class="panel reveal">
-      <h2>Interactive Access Guide</h2>
-      <div class="grid-2">
+```
+<section id="guide" class="panel reveal">
+  <h2>Kifesh todkhol (step by step)</h2>
+
+  <div class="grid-2">
+    <div>
+      <h3>PC / Laptop</h3>
+
+      <div class="step-card active">
+        <button class="step-head">1. Download Tor Browser <span>−</span></button>
+        <div class="step-body">
+          Emchi torproject.org w download version li yselek.
+        </div>
+      </div>
+
+      <div class="step-card">
+        <button class="step-head">2. Install & Launch <span>+</span></button>
+        <div class="step-body">
+          Installih w 7ell Tor Browser, tsanna chwaya hata yconnecti.
+        </div>
+      </div>
+
+      <div class="step-card">
+        <button class="step-head">3. Open .onion link <span>+</span></button>
+        <div class="step-body">
+          Hot el link fel barre mta3 Tor w odkhoul direct.
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h3>Smartphone</h3>
+
+      <div class="step-card active">
+        <button class="step-head">Android → Tor Browser <span>−</span></button>
+        <div class="step-body">
+          Install Tor Browser men Play Store w connecti b3d odkhoul.
+        </div>
+      </div>
+
+      <div class="step-card">
+        <button class="step-head">iPhone → Onion Browser <span>+</span></button>
+        <div class="step-body">
+          Install Onion Browser men App Store, w sta3melou ken lel links hedhouma.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="video-grid">
+    <article class="video-card">
+      <iframe src="https://www.youtube.com/embed/5EZJq1BeZ6w" title="Tor on PC" loading="lazy" allowfullscreen></iframe>
+      <a href="https://youtu.be/5EZJq1BeZ6w?si=nwA_I5VeiEk_hx8m" target="_blank" rel="noreferrer">Tutorial PC</a>
+    </article>
+
+    <article class="video-card">
+      <iframe src="https://www.youtube.com/embed/A3yifwDUvRo" title="Tor on mobile" loading="lazy" allowfullscreen></iframe>
+      <a href="https://youtu.be/A3yifwDUvRo?si=n_z7d50VQiOwmnIL" target="_blank" rel="noreferrer">Tutorial Mobile</a>
+    </article>
+  </div>
+</section>
+
+<section id="security" class="panel reveal">
+  <h2>Security & Anonymity 🔐</h2>
+
+  <div class="grid-3">
+    <div class="card">.onion = site ma yet7al ken b Tor.</div>
+    <div class="card">Connection mte3ek yodour 3la barcha servers (anonymous).</div>
+    <div class="card">La IP la tracking… enti invisible تقريبًا.</div>
+  </div>
+</section>
+
+<section id="features" class="panel reveal">
+  <h2>Chnowa tnajem ta3mel houni 🚀</h2>
+
+  <div class="grid-3">
+    <div class="card">Tbi3 ktaya3 Arduino mte3ek</div>
+    <div class="card">Tbi3 projects wala code khdemtou</div>
+    <div class="card">Tal9a chkoun yekhdemlek project</div>
+    <div class="card">Chat privé bin users</div>
+    <div class="card">Paiement b crypto bark</div>
+    <div class="card">Option hand-to-hand (b admin)</div>
+  </div>
+</section>
+
+<section id="chat" class="panel reveal">
+  <h2>Chat + Admin 💬</h2>
+  <p class="warn">A7sen haja: ma ta3mel hata deal ken bel admin.</p>
+
+  <div class="chat-box">
+    <div id="chatMessages" class="msgs">
+      <div class="msg">System: Marhbe bik. Dima dakhlel admin fel deal.</div>
+      <div class="msg">User_X: Nlawj 3la Arduino sensors.</div>
+    </div>
+
+    <div class="actions">
+      <button id="addAdminBtn" class="btn">Add Admin</button>
+      <button id="verifyBtn" class="btn" disabled>Verify Deal</button>
+    </div>
+  </div>
+</section>
+
+<section id="payment" class="panel reveal">
+  <h2>Payment 💰</h2>
+
+  <div class="grid-2">
+    <div class="card">
+      Kol chay b crypto (na3tiwk guide kifesh ta3mel wallet).
+    </div>
+    <div class="card">
+      Ma fama hata meeting direct, admin yratheb kol chay.
+    </div>
+  </div>
+
+  <article class="video-card single">
+    <iframe src="https://www.youtube.com/embed/byNNauAJrKI" title="Wallet setup" loading="lazy" allowfullscreen></iframe>
+    <a href="https://youtu.be/byNNauAJrKI?si=94gf6VE34Y_3mLBo" target="_blank" rel="noreferrer">Wallet Tutorial</a>
+  </article>
+</section>
+
+<section id="access" class="panel reveal">
+  <h2>Access 🔑</h2>
+
+  <div class="card">
+    <p>Ab3eth demande lel email: <strong id="staticEmail">emir.naasri@gmail.com</strong></p>
+    <p class="small">A7سن حاجة تستعمل email universitaire (kima esprit.tn).</p>
+  </div>
+</section>
+
+<section id="rules" class="panel reveal">
+  <h2>Rules ⚠️</h2>
+
+  <div class="grid-3">
+    <div class="card">Ma ta3tich comptek l hata had</div>
+    <div class="card">No spam</div>
+    <div class="card">Respecti la3bed</div>
+    <div class="card">Deal = admin obligatoire</div>
+    <div class="card">Khalik anonymous</div>
+    <div class="card">Ma ta3melch deals barra</div>
+  </div>
+</section>
+
+<section id="onion" class="panel reveal">
+  <h2>Onion Link 🌐</h2>
+
+  <div class="onion-box">
+    <code id="onionText">http://mqkxxqgn6ndbcleyutkv5ynl2ovyzsn5egng6nh5fmf6sb7oclui2xad.onion</code>
+    <button id="copyBtn" class="btn">COPY</button>
+    <p class="danger">7ellou ken b Tor Browser!</p>
+  </div>
+</section>
+
+<section id="dev-status" class="panel reveal">
+  <h2>Test Accounts 🧪</h2>
+
+  <div class="card test-access">
+    <p class="access-note">
+      Hethom accounts bach tjarreb el site b rouhek.
+    </p>
+
+    <div class="account-list">
+      <div class="account-item">
         <div>
-          <h3>PC / Laptop</h3>
-          <div class="step-card active">
-            <button class="step-head">1. Download Tor Browser <span>−</span></button>
-            <div class="step-body">Visit torproject.org and download the correct version for your OS.</div>
-          </div>
-          <div class="step-card">
-            <button class="step-head">2. Install & Launch <span>+</span></button>
-            <div class="step-body">Run installer, open Tor Browser, and wait for network connection.</div>
-          </div>
-          <div class="step-card">
-            <button class="step-head">3. Open .onion link <span>+</span></button>
-            <div class="step-body">Paste the official .onion address into Tor Browser URL bar.</div>
-          </div>
+          <small>Username</small>
+          <strong>pablo_06</strong>
         </div>
         <div>
-          <h3>Smartphone</h3>
-          <div class="step-card active">
-            <button class="step-head">Android → Tor Browser <span>−</span></button>
-            <div class="step-body">Install Tor Browser from Play Store and connect before browsing.</div>
-          </div>
-          <div class="step-card">
-            <button class="step-head">iPhone → Onion Browser <span>+</span></button>
-            <div class="step-body">Install Onion Browser from App Store and open .onion links only there.</div>
-          </div>
+          <small>Password</small>
+          <span>amigo2000</span>
         </div>
+        <button class="mini-copy" data-copy="pablo_06 : amigo2000">Copy</button>
       </div>
-      <div class="video-grid">
-        <article class="video-card">
-          <iframe src="https://www.youtube.com/embed/5EZJq1BeZ6w" title="Tor on PC" loading="lazy" allowfullscreen></iframe>
-          <a href="https://youtu.be/5EZJq1BeZ6w?si=nwA_I5VeiEk_hx8m" target="_blank" rel="noreferrer">Open PC Tutorial</a>
-        </article>
-        <article class="video-card">
-          <iframe src="https://www.youtube.com/embed/A3yifwDUvRo" title="Tor on mobile" loading="lazy" allowfullscreen></iframe>
-          <a href="https://youtu.be/A3yifwDUvRo?si=n_z7d50VQiOwmnIL" target="_blank" rel="noreferrer">Open Mobile Tutorial</a>
-        </article>
-      </div>
-    </section>
 
-    <section id="security" class="panel reveal">
-      <h2>Security & Anonymity</h2>
-      <div class="grid-3">
-        <div class="card">What is .onion? A domain reachable only through Tor.</div>
-        <div class="card">Anonymous routing across encrypted relays.</div>
-        <div class="card">No direct IP exposure and minimal tracking surface.</div>
-      </div>
-    </section>
-
-    <section id="features" class="panel reveal">
-      <h2>Marketplace Features</h2>
-      <div class="grid-3">
-        <div class="card">Buy Arduino parts (low cost)</div>
-        <div class="card">Sell academic projects</div>
-        <div class="card">Hire developers/builders</div>
-        <div class="card">Private chat system</div>
-        <div class="card">Crypto payments</div>
-        <div class="card">Hand-to-hand option</div>
-      </div>
-    </section>
-
-    <section id="chat" class="panel reveal">
-      <h2>Chat + Admin System</h2>
-      <p class="warn">No transaction without admin verification.</p>
-      <div class="chat-box">
-        <div id="chatMessages" class="msgs">
-          <div class="msg">System: Welcome. Always involve admin before any deal.</div>
-          <div class="msg">User_X: Looking for Arduino sensors.</div>
+      <div class="account-item">
+        <div>
+          <small>Username</small>
+          <strong>jacksparrow</strong>
         </div>
-        <div class="actions">
-          <button id="addAdminBtn" class="btn">Add Admin</button>
-          <button id="verifyBtn" class="btn" disabled>Request Verification</button>
+        <div>
+          <small>Password</small>
+          <span>goldyboy</span>
         </div>
+        <button class="mini-copy" data-copy="jacksparrow : goldyboy">Copy</button>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <section id="payment" class="panel reveal">
-      <h2>Payment System</h2>
-      <div class="grid-2">
-        <div class="card">Crypto-only payments with wallet setup guidance.</div>
-        <div class="card">No direct meeting. Admin coordinates public drop points.</div>
-      </div>
-      <article class="video-card single">
-        <iframe src="https://www.youtube.com/embed/byNNauAJrKI" title="Wallet setup" loading="lazy" allowfullscreen></iframe>
-        <a href="https://youtu.be/byNNauAJrKI?si=94gf6VE34Y_3mLBo" target="_blank" rel="noreferrer">Open Wallet Tutorial</a>
-      </article>
-    </section>
+<section id="preview" class="panel reveal">
+  <h2>Preview 👀</h2>
 
-    <section id="access" class="panel reveal">
-      <h2>Access Control</h2>
-      <div class="card">
-        <p>Send verification request to: <strong id="staticEmail">emir.naasri@gmail.com</strong></p>
-        <p class="small">Use university email (example: @esprit.tn). Verification is mandatory.</p>
-      </div>
-    </section>
+  <div class="gallery">
+    <img class="preview-img" src="assets/login.png" alt="Login preview" />
+    <img class="preview-img" src="assets/marketplace.png" alt="Marketplace preview" />
+    <img class="preview-img" src="assets/msg.png" alt="Messaging preview" />
+    <img class="preview-img" src="assets/paymnt.png" alt="Payment preview" />
+    <img class="preview-img" src="assets/uploadproduct.png" alt="Upload preview" />
+  </div>
+</section>
+```
 
-    <section id="rules" class="panel reveal">
-      <h2>Community Guidelines</h2>
-      <div class="grid-3">
-        <div class="card">No account sharing (instant ban)</div>
-        <div class="card">No spam</div>
-        <div class="card">No harassment or abuse</div>
-        <div class="card">No transaction without admin</div>
-        <div class="card">Respect anonymity</div>
-        <div class="card">No external deals</div>
-      </div>
-    </section>
-
-    <section id="onion" class="panel reveal">
-      <h2>Direct Onion Link</h2>
-      <div class="onion-box">
-        <code id="onionText">http://mqkxxqgn6ndbcleyutkv5ynl2ovyzsn5egng6nh5fmf6sb7oclui2xad.onion</code>
-        <button id="copyBtn" class="btn">COPY ADDRESS</button>
-        <p class="danger">Only open using Tor Browser.</p>
-      </div>
-    </section>
-
-    <section id="dev-status" class="panel reveal">
-      <h2>Free Test Access Accounts</h2>
-      <div class="card test-access">
-        <p class="access-note">Use these free accounts to access and test the platform yourself.</p>
-        <div class="account-list">
-          <div class="account-item">
-            <div>
-              <small>Username</small>
-              <strong>pablo_06</strong>
-            </div>
-            <div>
-              <small>Password</small>
-              <span>amigo2000</span>
-            </div>
-            <button class="mini-copy" data-copy="pablo_06 : amigo2000">Copy</button>
-          </div>
-          <div class="account-item">
-            <div>
-              <small>Username</small>
-              <strong>jacksparrow</strong>
-            </div>
-            <div>
-              <small>Password</small>
-              <span>goldyboy</span>
-            </div>
-            <button class="mini-copy" data-copy="jacksparrow : goldyboy">Copy</button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="preview" class="panel reveal">
-      <h2>Application Preview</h2>
-      <div class="gallery">
-        <img class="preview-img" src="assets/login.png" alt="Login preview" />
-        <img class="preview-img" src="assets/marketplace.png" alt="Marketplace preview" />
-        <img class="preview-img" src="assets/msg.png" alt="Messaging preview" />
-        <img class="preview-img" src="assets/paymnt.png" alt="Payment preview" />
-        <img class="preview-img" src="assets/uploadproduct.png" alt="Upload preview" />
-      </div>
-    </section>
   </main>
 
-  <button id="toTopBtn" class="to-top" aria-label="Back to top">↑</button>
+<button id="toTopBtn" class="to-top">↑</button>
 
-  <div id="lightbox" class="lightbox" aria-hidden="true">
-    <button id="lightboxClose" class="lightbox-close" aria-label="Close image">×</button>
-    <img id="lightboxImage" alt="Preview zoom" />
+  <div id="lightbox" class="lightbox">
+    <button id="lightboxClose" class="lightbox-close">×</button>
+    <img id="lightboxImage" />
   </div>
 
   <script src="script.js"></script>
+
 </body>
 </html>
